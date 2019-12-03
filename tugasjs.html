@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <br> 
+    <p id="monyet"></p>
+     <br> 
+    <p id="leptop"></p>
+       <br> 
+    <p id="hp"></p>
+       <br> 
+    <p id="kiu"></p> 
+	<br>
+	<p id="dia"></p>
+     <br> 
+       <button onclick="myFunction()">jgn di Tekan</button> 
+       <p id="pipi">zul fahmi</p>
+      <button onclick="replace()">Try it</button>
+		<p id="replace">saya bukan fahmi</p>
+    <br>
+    <p id="huh"></p>
+     <br>
+    <p id="ping"></p>
+     <p id="lah"></p>
+     <br> <p id="dudu"></p>
+     <br> 
+     
+     <script>
+    var txt = "NAMA ZULFAHMI WOY";
+ 	var hasil =txt.length;
+    document.write (hasil+"<br>");
+  
+    var str = "jangan di baca 'tulisan' ini";
+    var pos = str.indexOf("tulisan");
+    document.write (pos+"<br>");
+
+    var satu ="tekan tombol ini";
+    var bakwan =satu.lastIndexOf("tombol");
+    document.write (bakwan+"<br>");
+    
+    var dua = "saya sedang meeeeee";
+    var tempe = dua.indexOf("saya");
+    document.write (tempe+"<br>");
+
+    var tiga = "saya makan kemarin";
+	var tahu = tiga.indexOf("kemarin",3);
+    document.write (tahu+"<br>");
+
+    var empat = "peng pang pung pong";
+	var  cilok= empat.lastIndexOf("pang", 5);
+   document.write (cilok+"<br>");
+
+    var lima = "duaaar itu bunyi ledakan";
+	var pos = somay =lima.search("itu");
+    document.write (somay+"<br>");
+
+   var enam = "munawar, monyet, pintar";
+	var res = enam.slice(8,15);
+   document.getElementById("demo").innerHTML = res; 
+
+    var str = "Apple, Bukiki, Kiwi";
+	var res = str.slice(-12,-6);
+	document.getElementById("monyet").innerHTML = res;
+    
+	var str = "mangga, enak, sekali";
+	var res = str.slice(8);
+document.getElementById("leptop").innerHTML = res;
+
+     
+   var str = "motor, mobil, sepeda";
+	var res = str.slice(-7) 
+document.getElementById("hp").innerHTML = res;
+
+   var str = "kucing, garong, meong";
+	var res = str.substring(8,14);
+	document.getElementById("kiu").innerHTML = res;
+     
+    var str = "saya, Banana, karpet";
+	var res = str.substr(6,9);
+	document.getElementById("dia").innerHTML = res;
+     
+
+
+
+	function replace() {
+	   var sapi =    				document.getElementById("replace").innerHTML; 
+  var txt123 = sapi.replace("visit","fahmi");
+  document.getElementById("replace").innerHTML = txt123; }
+    
+function myFunction() {
+  var text = document.getElementById("pipi").innerHTML;
+  document.getElementById("pipi").innerHTML = text.toUpperCase
+6();
+}
+   
+     function myFunction() {
+  var str = "anda melanggar larangan!     ";
+  alert(str.trim());
+}
+  var str = "HELLO beb";
+document.getElementById("huh").innerHTML = str.charAt(0);
+  
+    var str = "hai dunia";
+document.getElementById("ping").innerHTML = str.charCodeAt(0);
+    
+     var str = "aku lelah";
+document.getElementById("lah").innerHTML = str[0];
+
+    var str = "Hello";
+var arr = str.split("");
+var text = "";
+var i;
+for (i = 0; i < arr.length; i++) {
+  text += arr[i] + "<br>"
+}
+document.getElementById("dudu").innerHTML = text;
+ </script>
+
+  </body>
+</html>
+

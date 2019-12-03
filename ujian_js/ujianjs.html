@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>konevrsi suhu</title>
+	<style type="text/css"></style>
+</head>
+<body>
+	<input type="number" id="celcius"><button onclick="suhu();">Convert</button>
+	<p>Kelvin = <span id="kelvin"></span></p>
+	<p>fahrenheit = <span id="fahrenheit"></span></p>
+	<p>rankine = <span id="rankine"></span></p>
+	<p>delisle = <span id="delisle"></span></p>
+	<p>newton = <span id="newton"></span></p>
+	<p>reamur = <span id="reamur"></span></p>
+	<p>romer = <span id="romer"></span></p>
+</body>
+</html>
+<script type="text/javascript">
+	function suhu() {
+		var celcius = parseInt(document.getElementById('celcius').value),
+			kelvin = celcius + 273 ,
+			fahrenheit = celcius * 1.8 +32,
+			rankine = 1.8 *(celcius + 491.67),
+			delisle = (100 - celcius) *1.5,
+			newton = celcius * 33/100,
+			reamur = celcius * 0.8,
+			romer = celcius * 21/40 + 7.5 ; 
+
+			document.getElementById('kelvin').innerHTML = kelvin;
+			document.getElementById('fahrenheit').innerHTML = fahrenheit;
+			document.getElementById('rankine').innerHTML = rankine;
+			document.getElementById('delisle').innerHTML = delisle;
+			document.getElementById('newton').innerHTML = newton;
+			document.getElementById('reamur').innerHTML = reamur;
+			document.getElementById('romer').innerHTML = romer;
+	}
+</script>
+<script>
+
+</script>

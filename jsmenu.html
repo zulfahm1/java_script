@@ -1,0 +1,212 @@
+
+<html>
+<head>
+	<title>warmindo</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<style>
+		body{
+			font-family:sans-serif;
+		}
+		.konten{
+			width:70%;
+			margin:auto;
+			background-color:#000000;
+			color:#fff;
+			padding:10px;
+			display:grid;
+			grid-template-columns:auto auto auto auto;
+			text-align:center;
+			
+		}
+		.total{
+			width:70%;
+			display:grid;
+			grid-template-columns:auto auto;
+			padding:4px;
+			margin:auto;
+			
+			
+		}
+		.grid{
+			width:200px;
+			padding:5px;
+			color:white;
+			background-color:#1b1c1b;
+			border-radius:4px;
+		}
+		
+		.grid:hover{
+			width:200px;
+			padding:5px;
+			color:#000;
+			background-color:#ffc130;
+			border-radius:4px;
+		}
+		
+		.header{
+			width:71%;
+			padding:10px;
+			color:#fff;
+			background-color:#000;
+			margin:auto;
+			margin-bottom:5px;
+			border-radius:10px;
+			font-size:14pt;
+		}
+		.material-icons{
+			font-size:80pt;
+			margin:0px;
+		}
+		
+		.pesan{
+			width:500px;
+			margin-left:14%;
+		}
+		.btn-psn{
+			width:200px;
+			background-color:#fff;
+			color:#000;
+			text-align:center;
+			padding:2px;
+			margin-top:3px;
+			border-radius:5px;
+			height:50px;
+		}
+		.btn-psn:hover{
+			width:200px;
+			background-color:#000;
+			color:#fff;
+			text-align:center;
+			padding:2px;
+			margin-top:3px;
+			border-radius:5px;
+		}
+		.kupon{
+			background-color:#000;
+			width:30px;
+		}
+		.can{
+			float:right;
+			width:150px;
+			height:30px;
+			margin-bottom:3px;
+		}
+	</style>
+</head>
+	<body>
+		<div class="header">
+		
+		<b>Selamat datang di zulfas market</b>
+		<button class="can" onclick="clr()"><i class="fa fa-trash" aria-hidden="true"></i>Cancel Order</button>
+		</div>
+				
+		<!-- baris kedua-->
+		
+			<div class="konten">
+			<div class="grid"> 
+				<p>menu 1</p>
+				<i class="material-icons">fastfood</i>
+				<hr>
+					<p>Kopi hitam</p>
+					<p>Indomi Spsial</p>
+				
+				<p><b>Rp : 10.000</b></p>
+				<button class="btn-psn" onclick="kopi()">PESAN SEKARANG</button>
+			</div> 
+			
+			<div class="grid"> 
+				<p>menu 2</p>
+				<i class="material-icons">room_service</i>
+				<hr>
+					<p>Kopi hitam</p>
+					<p>Burjo</p>
+				
+				<p><b>Rp : 7.000</b></p>
+				<button class="btn-psn" onclick="kop()">PESAN SEKARANG</button>
+			</div> 
+			
+			<div class="grid">
+				<p>menu 3</p>
+				<i class="material-icons">emoji_food_beverage</i>
+				<hr>
+					
+					<p>Kopi hitam spsial</p>
+					<p>.</p>
+				
+				<p><b>Rp : 5.000</b></p>
+				<button class="btn-psn" onclick="kopp()">PESAN SEKARANG</button>
+			</div> 
+			
+			<div class="grid"> 
+				<p>menu 4</p>
+				<i class="material-icons">local_drink</i>
+				<hr>
+					
+					<p>Air Putih</p>
+					<p>.</p>
+				
+				<p><b>Rp : 500</b></p>
+				<button class="btn-psn" onclick="koo()">PESAN SEKARANG</button>
+			</div>  
+			
+		</div>
+		<div class="total">
+		<p id="has"></p>
+
+		</span>
+		</div>
+		<script>
+			function kopi(){
+			var kopi= "Anda memesan menu 1<br><hr> Kopi       : Rp.4.000 <br>Indomie SPESIAL : Rp. 6.000<hr>ToTal Pesanan Anda Menjadi Rp :10.000 <br><b>pesanan segera datang</b>";
+			document.getElementById('has').innerHTML=kopi;
+			}
+			
+			function kop(){
+			var kopi= "Anda memesan menu 2<br><hr> Kopi       : Rp.4.000 <br>Borjo : Rp. 3.000<hr>ToTal Pesanan Anda Menjadi Rp :7.000 <br><b>pesanan segera datang</b>";
+			document.getElementById('has').innerHTML=kopi;
+			}
+			
+			function kopp(){
+			var kopi= "Anda memesan menu 3<br><hr> Kopi hitam spsial      : Rp.5.000 <hr>ToTal Pesanan Anda Menjadi Rp :5.000 <br><b>pesanan segera datang</b>";
+			document.getElementById('has').innerHTML=kopi;
+			}
+			
+			function koo(){
+			var kopi= "Anda memesan menu 4<br><hr> Air Putih      : Rp.5.00 <hr>ToTal Pesanan Anda Menjadi Rp :500 <br><b>pesanan segera datang</b>";
+			document.getElementById('has').innerHTML=kopi;
+			}
+			
+			function clr(){
+				var btl="Pesanan anda dibatalkan,<br> <h4> silahkan pesan kembali</h4>";
+				document.getElementById('has').innerHTML=btl;
+				window.confirm("apakah anda benar akan membatalkan pesanan ");
+				
+			}
+		
+		</script>
+	</body>
+<html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

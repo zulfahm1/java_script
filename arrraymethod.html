@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo"></p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo10"></p>
+<p id="demo9"></p>
+<button onclick="gelas()">Try it</button>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+
+<script>
+var hewan = ["kambing", "sapi", "cicak"];
+document.getElementById("demo").innerHTML = hewan.toString();
+
+var days = ["selasa", "sabtu", "minggu", "senin"];
+document.getElementById("demo1").innerHTML = days;
+days.pop();
+document.getElementById("demo2").innerHTML = days;
+
+var sounds = ["maemunah", "maesaroh", "tukiyem", ""];
+document.getElementById("demo").innerHTML =sounds;
+
+function myFunction() {
+  sounds.push("juminten");
+  document.getElementById("demo").innerHTML =sounds;
+}
+
+var benda = ["cermin", "lampu", "meja", "kursi"];
+document.getElementById("demo4").innerHTML = benda
+benda.shift();
+document.getElementById("demo5").innerHTML = benda;
+
+var kendaraan = ["sepeda", "mobil", "taxi", "angkot"];
+document.getElementById("demo7").innerHTML = kendaraan;
+kendaraan[0] = "pesawat";
+document.getElementById("demo6").innerHTML = kendaraan;
+
+var warna = ["kuning", "orange", "merah"];
+document.getElementById("demo8").innerHTML =
+"The first warna is: " + warna[0];
+delete warna[1];
+document.getElementById("demo9").innerHTML =
+"The first warna is: " + warna[1];
+
+var fruits = ["pisang", "mangga", "jeruk"];
+document.getElementById("demo9").innerHTML = "Original Array:<br>" + fruits;
+function myFunction() {
+  fruits.splice(0, 1, "jangan", "makan");
+  document.getElementById("demo10").innerHTML = "New Array:<br>" + fruits;
+}
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo11").innerHTML = fruits;
+function gelas() {
+  fruits.splice(0, 1);
+  document.getElementById("demo11").innerHTML = fruits;
+}
+
+var fruits = ["fahmi", "munawar", "haamam", "adi", "soki"];
+var citrus = fruits.slice(2);
+document.getElementById("demo12").innerHTML = fruits + "<br><br>" + citrus;
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo13").innerHTML = fruits.toString();
+
+</script>
+
+</body>
+</html>
+

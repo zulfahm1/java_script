@@ -1,0 +1,14 @@
+<input id="angka1">
++
+<input id="angka2">
+=
+<span id="hasil"></span>
+
+<br><br>
+
+<button>jumlahkan</button>
+
+<script>
+
+</script>
+
